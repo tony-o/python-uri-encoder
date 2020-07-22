@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+import timeit
+setup = "from URI.Encoder import encode, decode"
+print(timeit.timeit("encode(\"hello world!\");", setup=setup))
